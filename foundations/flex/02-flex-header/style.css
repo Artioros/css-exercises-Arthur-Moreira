@@ -1,19 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  height: 12vh;
+  width: 100vw;
+  display: flex;
+  font-family: "Courier Prime", serif;
 }
 
 .logo {
   font-size: 48px;
   font-weight: 900;
   color: tomato;
-  background: white;
+  background: papayawhip;
   padding: 4px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-span {
+  background: white;
+  padding: 4px 12px;
+}
+
+.left-links {
+  display: flex;
+  align-items: center;
+  margin-left: 2vw;
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+.left-links, .logo, .right-links {
+  flex: 1 1 auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 1vw;
 }
 
 a {
