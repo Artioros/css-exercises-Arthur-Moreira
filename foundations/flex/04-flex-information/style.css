@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -7,9 +18,17 @@ img {
   height: 100px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+  padding: 4vh;
 }
 
 /* do not edit this footer */
@@ -23,4 +42,23 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.all-the-plants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.barberry, .chili, .pepper, .saffron {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin-top: 2vh;
 }
